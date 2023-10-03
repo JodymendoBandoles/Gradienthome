@@ -1,7 +1,9 @@
-function Propertydetails() {
+function PropertyDetails() {
     return (
-        <></>
-    )
+        <>
+           <h1>PropertyDetails</h1>
+        </>
+    ) 
 }
 
-export default Propertydetails
+export default PropertyDetails

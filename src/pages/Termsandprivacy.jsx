@@ -1,7 +1,7 @@
-function Termsandprivacy () {
+function TermsAndPrivacy () {
     return (
         <></>
     )
 }
 
-export default Termsandprivacy
+export default TermsAndPrivacy
