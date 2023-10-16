@@ -1,27 +1,22 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Blogs from "./pages/Blogs";
-import Contact from "./pages/Contact";
-import FAQ from "./pages/FAQ";
-import PropertyDetails from "./pages/Propertydetails";
-import TermsAndPrivacy from "./pages/Termsandprivacy";
-
-
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Blogs from "./pages/Blogs/Blogs";
+import Contact from "./pages/Contact/Contact";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/blogs" element={<Blogs/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/faq" element={<FAQ/>} />
-        <Route path="/property-details" element={<PropertyDetails/>}/>
-        <Route path="/terms-and-privacy" element={<TermsAndPrivacy/>}/>
-      </Routes>
+      <ErrorBoundary>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about/about" element={<About />} />
+          <Route path="/blogs/blogs" element={<Blogs />} />
+          <Route path="/contact/contact" element={<Contact />} />
+        </Routes>
+      </ErrorBoundary>      
     </BrowserRouter>
   );
 }
