@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link,} from "react-router-dom";
-import './Navbar.min.css';
+import './Styles/Navbar.min.css';
 import logo from '../assets/Gradienthomelogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';

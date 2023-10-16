@@ -123,52 +123,6 @@
   margin-top: 10px;
 }
 
-.EducationandCare {
-  text-align: center;
-}
-
-.EducationandCare h2{
-  color: #0d74ba;
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 2.3rem;
-  letter-spacing: 3px;
-  margin-bottom: 2vh;
-}
-
-.card {
-  background-color: #84BCDC;
-  padding: 2vh 2vw;
-}
-
-.card h4 {
-  color: #0d74ba;
-  margin-top: 2rem;
-}
-
-.Goldenyellowbackground {
-  background-color: #F8C740;
-  border: 1px solid #F8C740;
-  border-radius: 4px;
-}
-
-.card h4 {
-  color: #0d74ba;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-}
-
-.card:hover h4 {
-  transform: scale(1.01) translateY(-5px);
-}
-
-.card p {
-  color: white;
-  margin-bottom: 2rem;
-}
-
 .Gallery {
   color: #0d74ba;
   font-family: 'Poppins', sans-serif;
@@ -335,57 +289,6 @@
     height: 350px;
   }
 
-  .EducationandCare h2{
-    color: #0d74ba;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 2.3rem;
-    letter-spacing: 3px;
-    margin-bottom: 3vh;
-  }
-
-  .EducationandCare h3 {
-    font-size: 25px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    margin-bottom: 2vh;
-  }
-
-  .card {
-    height: 80vh;
-    background-color: #84BCDC;
-    padding: 2vh 2vw;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-  }
-  
-  .card h4 {
-    color: #0d74ba;
-    margin-top: -1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .Goldenyellowbackground {
-    background-color: #F8C740;
-    border: 1px solid #F8C740;
-    border-radius: 4px;
-  }
-  
-  .card p {
-    color: white;
-    margin-bottom: 2rem;
-  }
-
-  .card:hover {
-    transform: scale(1.01) translateY(-5px);
-    border-top: 5px solid #F8C740;
-  }
-
-  .card:hover h4 {
-  transform: scale(1.01) translateY(-5px);
-  }
 
   .Galleryro2 {
     margin-top: 3vh;

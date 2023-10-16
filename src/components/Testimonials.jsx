@@ -2,6 +2,7 @@ import React from "react";
 import JeffBezos from '../assets/JeffBezos.jpg';
 import ElonMusk from '../assets/ElonMusk.jpg';
 import BernardArnault from '../assets/BernardArnault.jpg';
+import "./Styles/Testimonials.css";
 
 const Testimonials = () => {
     return (
