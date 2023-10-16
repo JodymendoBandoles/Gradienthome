@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Blogs from "./pages/Blogs/Blogs";
+import FAQ from "./pages/FAQ/FAQ";
 import Contact from "./pages/Contact/Contact";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about/about" element={<About />} />
-          <Route path="/blogs/blogs" element={<Blogs />} />
+          <Route path="/faq/faq" element={<FAQ />} />
           <Route path="/contact/contact" element={<Contact />} />
         </Routes>
       </ErrorBoundary>      

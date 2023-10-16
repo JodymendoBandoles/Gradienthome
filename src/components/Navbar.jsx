@@ -5,6 +5,7 @@ import logo from '../assets/Gradienthomelogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
+
 function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
 
@@ -46,7 +47,7 @@ function Navbar() {
                   <Link className="nav-link" to="/About/About">About Us</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Blogs/Blogs">Blogs</Link>
+                  <Link className="nav-link" to="/FAQ/FAQ">Faq's</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/Contact/Contact">Contact</Link>
@@ -55,7 +56,7 @@ function Navbar() {
               <form className="d-flex">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                 <button className="btn btn-outline-light" type="submit">
-                 <FontAwesomeIcon icon={faSearch} style={{ color: '#ffffff' }} />
+                  <FontAwesomeIcon icon={faSearch} className="fa-beat" style={{ color: '#ffffff' }} />
                 </button>
               </form>
             </div>

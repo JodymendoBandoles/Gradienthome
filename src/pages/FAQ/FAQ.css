@@ -1,0 +1,35 @@
+.faq-item {
+  cursor: pointer;
+  border-top: 1px solid #ddd;
+  padding: 16px;
+  position: relative;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.faq-item.active {
+  background-color: #d75b40;
+  color: white;
+}
+
+.faq-number {
+  font-size: 18px;
+  margin-right: 10px;
+  transition: font-size 0.2s;
+}
+
+.answer {
+  display: none;
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+  background-color: #d75b40;
+  color: white;
+}
+
+.faq-item.active .faq-number {
+  font-size: 24px;
+}
+
+.faq-item.active .answer {
+  display: block;
+}

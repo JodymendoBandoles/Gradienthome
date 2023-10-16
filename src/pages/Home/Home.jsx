@@ -6,7 +6,8 @@ import bannerImage2 from '../../assets/Homepagebanner2.jpg';
 import Mobilebanner1 from '../../assets/Mobilebanner1.jpg';
 import Mobilebanner2 from '../../assets/Mobilebanner2.jpg'; 
 import "./Home.css";
-import PropertyListing from "../../components/PropertyListing"; 
+import PropertyListing from "../../components/PropertyListing";
+import GoogleMap from "../../components/GoogleMap";
 import Testimonials from "../../components/Testimonials";
 import Footer from "../../components/Footer";
 
@@ -109,6 +110,7 @@ function Home() {
                 </div>
             </section>
             <PropertyListing />
+            <GoogleMap /> 
             <Testimonials />
             <Footer />
 

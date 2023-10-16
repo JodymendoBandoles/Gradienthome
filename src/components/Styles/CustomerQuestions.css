@@ -1,0 +1,98 @@
+.customer-questions {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.customer-questions h2 {
+font-size: 30px; 
+margin: 20px, auto;
+}
+
+.customer-questions input {
+width: 500px;
+height: 50px; 
+padding: 8px;
+font-size: 16px;
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+border: 2px solid;
+}
+
+.customer-questions button {
+background-color: #3e372e;
+color: white;
+padding: 12px 24px; 
+border: 2px solid #3e372e;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+width: 200px;
+font-size: 18px;
+font-weight: 600;
+letter-spacing: 1.5px;
+}
+
+.customer-questions button:hover {
+background-color: #d75b40;
+border: 2px solid #d75b40;
+color: white;
+}
+
+.customer-questions ul {
+list-style-type: none;
+padding: 0;
+}
+
+.customer-questions ul li {
+margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .customer-questions {
+        text-align: center;
+        margin-bottom: 150px;
+    }
+    
+    .customer-questions h2 {
+    font-size: 30px; 
+    margin: 20px, auto;
+    }
+    
+    .customer-questions input {
+    width: 500px;
+    height: 50px; 
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-radius: 8px;
+    border: 2px solid;
+    margin-bottom: 5px;
+    }
+    
+    .customer-questions button {
+    background-color: #3e372e;
+    color: white;
+    padding: 12px 24px; 
+    border: 2px solid #3e372e;
+    border-radius: 8px;
+    border-radius: 8px;
+    width: 500px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    }
+    
+    .customer-questions button:hover {
+    background-color: #d75b40;
+    border: 2px solid #d75b40;
+    color: white;
+    }
+    
+    .customer-questions ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    .customer-questions ul li {
+    margin: 10px 0;
+    }
+}

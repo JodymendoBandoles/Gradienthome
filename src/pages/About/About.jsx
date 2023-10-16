@@ -4,6 +4,8 @@ import "./About.css";
 import AboutUsImage from '../../assets/AboutUsImage.jpg';
 import AboutUsImage2 from '../../assets/AboutUsImage2.jpg';
 import Jodymendo from '../../assets/Jodymendo.jpg';
+import GoogleMap from "../../components/GoogleMap";
+import Footer from "../../components/Footer";
 
 
 function About() {
@@ -107,8 +109,10 @@ function About() {
                 </div>
                 </div>
             </div>
-        </section> */}
-      
+        </section> */} 
+
+        <GoogleMap /> 
+        <Footer /> 
       
     </>
   );

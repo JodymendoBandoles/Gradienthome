@@ -1,0 +1,41 @@
+#Contactustitle {
+width: 100%;
+height: 100vh;
+color:#d75b40;
+background-color: rgba(0, 0, 0, 0.3);
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 5rem;
+font-family: 'Poppins', sans-serif;
+text-align: center;
+font-weight: bold;
+}
+
+#Getintouch {
+color:#d75b40;
+font-weight: bold;
+}
+
+#ContactUs-btn {
+  background-color: #d75b40;
+  color: white;
+  border: 2px solid #d75b40;
+  border-radius: 6px;
+  padding: 12px 24px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#ContactUs-btn:hover {
+  background-color: transparent;
+  color: #d75b40;
+  border: 2px solid #d75b40;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.font-italic {
+font-style: italic;
+}
