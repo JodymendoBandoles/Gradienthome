@@ -18,7 +18,7 @@ border-bottom-left-radius: 8px;
 border: 2px solid;
 }
 
-.customer-questions button {
+.customer-questions .customer-questionsbtn {
 background-color: #3e372e;
 color: white;
 padding: 12px 24px; 
@@ -31,7 +31,7 @@ font-weight: 600;
 letter-spacing: 1.5px;
 }
 
-.customer-questions button:hover {
+.customer-questions .customer-questionsbtn:hover {
 background-color: #d75b40;
 border: 2px solid #d75b40;
 color: white;
@@ -68,7 +68,7 @@ margin: 10px 0;
     margin-bottom: 5px;
     }
     
-    .customer-questions button {
+    .customer-questions .customer-questionsbtn {
     background-color: #3e372e;
     color: white;
     padding: 12px 24px; 
@@ -81,7 +81,7 @@ margin: 10px 0;
     letter-spacing: 1.5px;
     }
     
-    .customer-questions button:hover {
+    .customer-questions .customer-questionsbtn:hover {
     background-color: #d75b40;
     border: 2px solid #d75b40;
     color: white;

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import 'normalize.css';
 import './Styles/CustomerQuestions.css'; 
+import 'normalize.css';
 
 function CustomerQuestions() {
   const [questions, setQuestions] = useState([]);
@@ -28,7 +30,7 @@ function CustomerQuestions() {
         value={newQuestion}
         onChange={(e) => setNewQuestion(e.target.value)}
       />
-      <button onClick={addQuestion}>
+      <button class="customer-questionsbtn" onClick={addQuestion}>
         Submit
       </button>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import './styles/PropertyListing.css';
+import "./Styles/PropertyListing.css";
 
 function PropertyListing() {
   return (

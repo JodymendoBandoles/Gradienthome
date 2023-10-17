@@ -14,16 +14,12 @@ function Contact() {
   });
 
   const sendMessage = () => {
-    // Add your logic to handle sending the message here
-    // You can use the form data and make an API request to send the message
     axios
       .post('https://my-api-endpoint.com/send-message', formData)
       .then((response) => {
-        // Handle success, e.g., show a success message to the user
         console.log('Message sent successfully!', response.data);
       })
       .catch((error) => {
-        // Handle errors, e.g., show an error message to the user
         console.error('Failed to send message:', error);
       });
   };
@@ -64,10 +60,10 @@ function Contact() {
                   type="text"
                   className="form-control"
                   id="name"
-                  name="name" // Add the name attribute
+                  name="name" 
                   placeholder="Enter your name"
-                  value={formData.name} // Set the value from state
-                  onChange={handleInputChange} // Handle input changes
+                  value={formData.name} 
+                  onChange={handleInputChange} 
               />
             </div>
             <div className="mb-3">
@@ -76,10 +72,10 @@ function Contact() {
                   type="email"
                   className="form-control"
                   id="email"
-                  name="email" // Add the name attribute
+                  name="email" 
                   placeholder="Enter your email"
-                  value={formData.email} // Set the value from state
-                  onChange={handleInputChange} // Handle input changes
+                  value={formData.email} 
+                  onChange={handleInputChange} 
               />
             </div>
             <div className="mb-3">
@@ -88,10 +84,10 @@ function Contact() {
                   type="number"
                   className="form-control"
                   id="phone"
-                  name="phone" // Add the name attribute
+                  name="phone" 
                   placeholder="Enter your phone number"
-                  value={formData.phone} // Set the value from state
-                  onChange={handleInputChange} // Handle input changes
+                  value={formData.phone} 
+                  onChange={handleInputChange} 
               />
             </div>
             <div className="mb-3">
@@ -99,11 +95,11 @@ function Contact() {
               <textarea
                   className="form-control"
                   id="message"
-                  name="message" // Add the name attribute
+                  name="message"
                   rows="3"
-                  value={formData.message} // Set the value from state
-                  onChange={handleInputChange} // Handle input changes
-              ></textarea>
+                  value={formData.message} 
+                  onChange={handleInputChange} 
+                ></textarea>
             </div>
             <button id="ContactUs-btn" className="btn" onClick={sendMessage}>Send</button>
           </div>
