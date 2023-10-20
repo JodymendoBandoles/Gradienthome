@@ -5,6 +5,8 @@ import About from "./pages/About/About";
 import FAQ from "./pages/FAQ/FAQ";
 import Contact from "./pages/Contact/Contact";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
+import LoginForm from "./components/LoginForm.jsx";
+import RegistrationForm from "./components/RegistrationForm.jsx";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/about/about" element={<About />} />
           <Route path="/faq/faq" element={<FAQ />} />
           <Route path="/contact/contact" element={<Contact />} />
+          <Route path="/loginform" element={<LoginForm />} />
+          <Route path="/registrationform" element={<RegistrationForm />} />
         </Routes>
       </ErrorBoundary>      
     </BrowserRouter>

@@ -3,11 +3,13 @@ import { Link,} from "react-router-dom";
 import './Styles/Navbar.min.css';
 import logo from '../assets/Gradienthomelogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+  const [username, setUsername] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +27,16 @@ function Navbar() {
     };
   }, []); 
 
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+    setUsername("YourUsername"); 
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setUsername("");
+  };
+
 
   return (
     <>
@@ -32,7 +44,7 @@ function Navbar() {
         <nav className={`navbar navbar-expand-lg bg-white fixed-top d-flex ${isSticky ? 'is-sticky' : ''}`} id="navbar">
           <div className="container">
             <Link to="/" className="navbar-brand"> {}
-              <img src={logo} alt="website-logo" width="170" height="120" />
+              <img src={logo} alt="website-logo" width="150" height="110" />
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,10 +66,17 @@ function Navbar() {
                 </li>
               </ul>
               <form className="d-flex">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <input className="form-control me-2 input-custom" type="search" placeholder="Search" aria-label="Search" />
                 <button className="btn btn-outline-light" type="submit">
                   <FontAwesomeIcon icon={faSearch} className="fa-beat" style={{ color: '#ffffff' }} />
                 </button>
+                <div className="d-flex align-items-center vertical-flex-container">
+                  <FontAwesomeIcon icon={faUser} className="user-icon" />
+                  <Link to="/loginForm" className="small-text">
+                    {isLoggedIn ? "Logout" : "Login"}
+                  </Link>
+                  {isLoggedIn && <span>{username}</span>}
+                </div>
               </form>
             </div>
           </div>
